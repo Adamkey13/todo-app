@@ -1,0 +1,29 @@
+{
+    "name": "ToDo App",
+    "short_name": "Todos",
+    "start_url": "./?mode=pwa",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "screenshot-desktop.png",
+            "sizes": "1919x1014",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "ToDo App Login Screen"
+        },
+        {
+            "src": "screenshot-mobile.png",
+            "sizes": "701x1018",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "ToDo App Login Screen"
+        }
+    ]
+}
