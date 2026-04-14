@@ -71,6 +71,10 @@
     min-height: 0;
 }
 
+.todo-view-btn {
+    color: var(--text);
+}
+
 .button-logout {
     background-color: var(--btn-logout-bg);
     color: var(--text);
