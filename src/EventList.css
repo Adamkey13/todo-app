@@ -1,0 +1,148 @@
+.event-panel {
+  padding: 16px 20px 16px 20px;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  color: var(--text);
+  overflow: hidden;
+  min-height: 0;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.event-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.event-selected-date {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.event-add-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.event-input-title {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(20, 115, 162);
+  background: var(--input-bg);
+  color: rgb(20, 115, 162);
+}
+
+.event-input-date {
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid rgb(20, 115, 162);
+  background: var(--input-bg);
+  color: rgb(20, 115, 162);
+}
+
+.event-add-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgb(20, 115, 162);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.event-add-btn:hover {
+  filter: brightness(1.1);
+}
+
+.event-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-radius: 12px;
+  gap: 6px;
+  height: auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.event-empty {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.event-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.event-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-title {
+  font-size: 14px;
+}
+
+.event-meta {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.event-date {
+  font-style: italic;
+}
+
+.event-delete {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.event-delete:hover {
+  opacity: 1;
+}
+
+.event-input-desc {
+  align-self: center;
+  width: 80%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(20, 115, 162);
+  background: var(--input-bg);
+  color: rgb(20, 115, 162);
+  resize: vertical;
+}
+
+.event-edit-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.event-edit-form input,
+.event-edit-form textarea {
+  text-align: left;
+}

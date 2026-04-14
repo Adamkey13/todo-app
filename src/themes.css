@@ -1,0 +1,94 @@
+:root {
+    --bg: rgb(214, 214, 214);
+    --text: #353535;
+    --card-bg: rgb(214, 214, 214);
+    --btn-logout-bg: rgb(214, 214, 214);
+    --btn-logout-hover-bg: rgb(164, 164, 164);
+    --input-bg: rgb(191, 191, 191);
+    --theme-btn-bg: rgba(0, 0, 0, 0.3);
+    --theme-btn-hover-bg: rgba(0, 0, 0, 0.2);
+    --shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    --modal-line: rgba(0, 0, 0, 0.15);
+    --gradient: linear-gradient(-45deg,
+            #2b9aff 0%,
+            #38a6ff 8%,
+            #46b2ff 14%,
+            #53bfff 20%,
+            #61cbff 28%,
+            #6ed7ff 35%,
+            #7ae2ff 42%,
+            #85ecff 49%,
+            #8ff5ff 56%,
+            #98faff 63%,
+            #a2ffff 70%,
+            #aafcff 78%,
+            #b3f9ff 87%,
+            #bcf7ff 100%);
+
+    /* number input spinner buttons */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        filter: invert(1);
+        /* quick hack: flips colors */
+        opacity: 0.5;
+    }
+
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 999px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(20, 115, 162, 0.7);
+        border-radius: 999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(20, 115, 162, 0.9);
+    }
+
+
+
+}
+
+[data-theme="dark"] {
+    --bg: #353535;
+    --text: #e2e2e2;
+    --card-bg: #353535;
+    --btn-logout-bg: #353535;
+    --btn-logout-hover-bg: #555555;
+    --input-bg: rgb(39, 39, 39);
+    --theme-btn-bg: rgba(255, 255, 255, 0.15);
+    --theme-btn-hover-bg: rgba(255, 255, 255, 0.25);
+    --shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    --modal-line: rgba(255, 255, 255, 0.15);
+    --gradient: linear-gradient(-45deg,
+            #050814 0%,
+            #07101D 8%,
+            #081423 14%,
+            #0A1A2B 20%,
+            #0C2133 28%,
+            #0F2A3D 35%,
+            #123545 42%,
+            #15414E 49%,
+            #18505A 56%,
+            #1B5E64 63%,
+            #1F6F72 70%,
+            #225E68 78%,
+            #233C4A 87%,
+            #161925 100%);
+
+    /* number input spinner buttons */
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        filter: none;
+        opacity: 0.5;
+    }
+
+}

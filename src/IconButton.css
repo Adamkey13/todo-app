@@ -1,0 +1,42 @@
+.IconButton {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--theme-btn-bg);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: 0.2s;
+}
+
+@media (max-width: 700px) {
+  .IconButton {
+    top: 10px;
+    right: 10px;
+    padding: 6px 10px;
+  }
+}
+
+
+.IconButton:hover {
+  background: var(--theme-btn-hover-bg);
+  box-shadow: var(--shadow);
+}
+
+.IconButton:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+.IconButton .material-symbols-outlined {
+  font-size: 24px;
+  line-height: 1;
+}

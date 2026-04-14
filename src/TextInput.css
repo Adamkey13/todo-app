@@ -1,0 +1,31 @@
+.field input {
+    width: 100%;
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
+    border: 1px solid rgb(20, 115, 162);
+    border-radius: 10px;
+    background: var(--input-bg);
+    outline: none;
+    color: rgb(20, 115, 162);
+}
+
+.field label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: rgb(20, 115, 162);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+.field input:focus+label,
+.field input:not(:placeholder-shown)+label {
+    top: -13px;
+    left: 2px;
+    font-size: 12px;
+    padding: 0px 4px 0px 4px;
+    border: 1px solid rgb(20, 115, 162);
+    color: rgb(20, 115, 162);
+    background-color: var(--card-bg);
+}
